@@ -32,4 +32,9 @@ public class Route {
     public void setTripPrice(double tripPrice) {
         this.tripPrice = tripPrice;
     }
+
+    @Override
+    public String toString() {
+        return "Pick Up Address: " + pickUpAddress + ", to: " + destinationAddress + ", with a price of: " + tripPrice;
+    }
 }

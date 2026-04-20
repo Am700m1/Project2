@@ -1,12 +1,12 @@
 public class Car {
     private String code;
     private Route route;
-    private int numberOfPassengers;
+    private int carCapacity;
 
-    public Car(String code, Route route, int numberOfPassengers){
+    public Car(String code, Route route, int carCapacity){
         this.code = code;
         this.route = route;
-        this.numberOfPassengers = numberOfPassengers;
+        this.carCapacity = carCapacity;
     }
 
     public String getCode(){
@@ -25,11 +25,15 @@ public class Car {
         this.route = route;
     }
 
-    public int getNumberOfPassengers(){
-        return numberOfPassengers;
+    public int getCarCapacity(){
+        return carCapacity;
     }
 
-    public void setNumberOfPassengers(int numberOfPassengers) {
-        this.numberOfPassengers = numberOfPassengers;
+    public void setCarCapacity(int carCapacity) {
+        this.carCapacity = carCapacity;
+    }
+
+    public String toString(){
+        return "Car Code: " + code + " and it has the next route: \n" + route.toString() + "\nand the available number of seats is: " + carCapacity;
     }
 }
