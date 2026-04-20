@@ -11,6 +11,11 @@ abstract class Passenger {
         this.tripCost = tripCost;
     }
 
+    public Passenger(String name, String id) {
+        this.name = name;
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }

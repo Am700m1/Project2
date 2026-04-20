@@ -34,6 +34,6 @@ public class Car {
     }
 
     public String toString(){
-        return "Car Code: " + code + " and it has the next route: \n" + route.toString() + "\nand the available number of seats is: " + carCapacity;
+        return "Car Code: " + code + " and it has the next route: \n" + route.toString() + "\nand the available number of seats is: " + carCapacity + "\n";
     }
 }
