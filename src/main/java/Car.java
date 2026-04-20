@@ -1,9 +1,9 @@
 public class Car {
     private String code;
-    private String route;
+    private Route route;
     private int numberOfPassengers;
 
-    public Car(String code, String route, int numberOfPassengers){
+    public Car(String code, Route route, int numberOfPassengers){
         this.code = code;
         this.route = route;
         this.numberOfPassengers = numberOfPassengers;
@@ -17,11 +17,11 @@ public class Car {
         this.code = code;
     }
 
-    public String getRoute(){
+    public Route getRoute(){
         return route;
     }
 
-    public void setRoute(String route){
+    public void setRoute(Route route){
         this.route = route;
     }
 
